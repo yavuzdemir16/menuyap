@@ -1,0 +1,12 @@
+# Upload klasörü güvenlik ayarları
+Options -Indexes
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Sadece belirli dosya türlerine izin ver
+<FilesMatch "\.(jpg|jpeg|png|gif|pdf|doc|docx)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
