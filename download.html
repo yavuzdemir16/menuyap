@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cPanel Dosyalarını İndir</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        .download-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .file-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .file-list h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .file-list ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .file-list li {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 cPanel Dosyalarını İndir</h1>
+        <p>Web sitenizi cPanel'e yüklemek için gerekli tüm dosyalar hazır!</p>
+        
+        <div class="file-list">
+            <h3>📁 Paket İçeriği:</h3>
+            <ul>
+                <li>index.html - Ana sayfa</li>
+                <li>style.css - Stil dosyası</li>
+                <li>script.js - JavaScript dosyası</li>
+                <li>.htaccess - Sunucu ayarları</li>
+            </ul>
+        </div>
+        
+        <a href="cpanel-files.zip" download="cpanel-files.zip" class="download-btn">
+            ⬇️ ZIP Dosyasını İndir
+        </a>
+        
+        <a href="cpanel-upload-guide.txt" download="yükleme-rehberi.txt" class="download-btn">
+            📖 Yükleme Rehberini İndir
+        </a>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #999;">
+            ZIP dosyasını indirdikten sonra cPanel File Manager'da public_html klasörüne yükleyin.
+        </p>
+    </div>
+</body>
+</html>
