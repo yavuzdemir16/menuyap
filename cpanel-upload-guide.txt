@@ -1,0 +1,43 @@
+cPanel'e Dosya Yükleme Rehberi
+================================
+
+1. DOSYALARI HAZIRLA:
+   - public_html klasöründeki tüm dosyaları (.html, .css, .js, .htaccess) seç
+   - Bu dosyaları ZIP olarak sıkıştır VEYA tek tek yükle
+
+2. cPANEL'E GİRİŞ:
+   - cPanel hesabına giriş yap
+   - "File Manager" (Dosya Yöneticisi) bölümünü bul ve tıkla
+
+3. DOSYA YÜKLEME:
+   - File Manager'da "public_html" klasörüne git
+   - Mevcut dosyaları sil (index.html varsa)
+   - "Upload" butonuna tıkla
+   - Hazırladığın dosyaları seç ve yükle
+
+4. İZİNLER:
+   - Yüklenen dosyaların izinlerini kontrol et
+   - HTML, CSS, JS dosyaları için: 644
+   - .htaccess dosyası için: 644
+   - Klasörler için: 755
+
+5. TEST:
+   - Domain adresini tarayıcıda aç
+   - Sitenin düzgün çalıştığını kontrol et
+
+DOSYA YAPISI:
+public_html/
+├── index.html      (Ana sayfa)
+├── style.css       (Stil dosyası)
+├── script.js       (JavaScript)
+└── .htaccess       (Sunucu ayarları)
+
+NOT: 
+- .htaccess dosyası gizli dosyadır, File Manager'da "Show Hidden Files" seçeneğini aktif et
+- Eğer alt klasör kullanmak istersen, public_html içinde yeni klasör oluştur
+- SSL sertifikan varsa .htaccess dosyasındaki HTTPS yönlendirme satırlarını aktif et
+
+SORUN GİDERME:
+- 500 Error: .htaccess dosyasını kontrol et
+- CSS yüklenmiyor: Dosya yollarını kontrol et  
+- JavaScript çalışmıyor: Konsol hatalarını kontrol et
